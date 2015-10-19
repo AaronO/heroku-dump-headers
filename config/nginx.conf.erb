@@ -43,6 +43,8 @@ http {
 
     server_tokens off;
     sendfile on;
+    # Our mime definitions
+    include mime.types;
 
     ##
     # Upstream
@@ -60,9 +62,6 @@ http {
         listen <%= ENV["PORT"] %>;
         server_name www.gitbook.com;
         keepalive_timeout 5;
-
-        # Our mime definitions
-        include mime.types;
 
         location ~ ^/assets/(.*) {
           root /app;
