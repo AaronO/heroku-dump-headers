@@ -83,8 +83,7 @@ http {
     ##
 
     server {
-        listen <%= ENV["PORT"] %>;
-        server_name _;
+        listen <%= ENV["PORT"] %> default_server;
         keepalive_timeout 5;
 
         location / {
