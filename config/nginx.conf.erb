@@ -60,7 +60,7 @@ http {
 
     server {
         listen <%= ENV["PORT"] %>;
-        server_name www.gitbook.com;
+        server_name headers.gitbook.com;
         keepalive_timeout 5;
 
         location ~ ^/assets/(.*) {
