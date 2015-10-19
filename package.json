@@ -1,0 +1,23 @@
+{
+  "name": "heroku-dump-headers",
+  "version": "0.0.0",
+  "description": "A small heroku app that dumps Heroku headers to debug some nginx stuff",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronO/heroku-dump-headers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AaronO/heroku-dump-headers/issues"
+  },
+  "homepage": "https://github.com/AaronO/heroku-dump-headers#readme"
+}
