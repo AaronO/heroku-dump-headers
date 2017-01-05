@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 
 app.get('*', function (req, res) {
+    res.setHeader('Content-Type', 'application/json');
     res.send(
         JSON.stringify(req.headers, null, 4)
     );
